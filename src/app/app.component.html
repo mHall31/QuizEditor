@@ -33,7 +33,9 @@
       <div *ngIf="selectedQuiz">
         <br>
         <button 
-          class="btn btn-outline-dark">
+          class="btn btn-outline-dark"
+          (click)="saveBatchEdits()"
+          >
           Save Quizzes
           <span 
             *ngIf="numberOfDeletedQuizzes > 0"
